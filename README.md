@@ -17,7 +17,7 @@
 
 ### Testing Application
 * Abrir navegador: http://localhost:8081/rest/mscovid/test?msg=testing
-
+Este paso no lo entendi, nunca funciono
 ## Linux
 
 ### Compile Code
