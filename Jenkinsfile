@@ -3,23 +3,17 @@ pipeline {
     stages {
         stage('compile_code'){
             steps {
-                {
                     bat './mvnw.cmd clean compile -e'
-                }
             }
         }
         stage('test_code'){
             steps {
-                 {
                     bat './mvnw.cmd clean test -e'
-                }
             }
         }
         stage('jar_code'){
             steps {
-                 {
                     bat './mvnw.cmd clean package -e'
-                }
             }
         }
         stage('sonarQube') {
@@ -32,9 +26,7 @@ pipeline {
         }
          stage('run_jar'){
             steps {
-                 {
-                    bat 'start mvnw.cmd spring-boot:run'
-                }
+                bat 'start mvnw.cmd spring-boot:run'
             }
         }
     }
