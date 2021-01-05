@@ -24,7 +24,7 @@ pipeline {
                 }
             }
         }
-        stage('run_jar'){
+         stage('run_jar'){
             steps {
                 bat 'start mvnw.cmd spring-boot:run'
             }
