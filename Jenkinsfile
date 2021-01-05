@@ -18,8 +18,8 @@ pipeline {
         }
         stage('sonarQube') {
             steps {
-                withSonarQubeEnv(installationName: 'Sonar') 
-                { // You can override the credential to be used
+                withSonarQubeEnv(installationName: 'Sonar-Server') 
+                { 
                     bat 'mvnw org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
                 }
             }
