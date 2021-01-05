@@ -20,7 +20,7 @@ pipeline {
             steps {
                 withSonarQubeEnv(installationName: 'Sonar-Server') 
                 { 
-                    bat 'mvnw org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
+                    bat './mvnw.cmd org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
                 }
             }
         }
